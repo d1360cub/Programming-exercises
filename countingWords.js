@@ -1,6 +1,6 @@
-function countingWords(frase) {
-  const splittedFrase = frase.split(' ');
-  const countedWords = splittedFrase.reduce((out, cur) => {
+function countingWords(phrase) {
+  const splittedPhrase = phrase.split(' ');
+  const countedWords = splittedPhrase.reduce((out, cur) => {
     if (out[cur]) {
       out[cur]++;
     } else {
