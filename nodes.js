@@ -14,7 +14,8 @@ whoIsTheRoot([{id: 3, parentId: 7}, {id: 5, parentId: 7}, {id: 7, parentId: null
 */
 
 function whoIsTheRoot(arr) {
-  for (let i = 0; i < arr.length; i++) {
+  //for (let i = 0; i < arr.length; i++) {
+  for (let i in arr) {
     if (arr[i].parentId === null) {
       return arr[i];
     }
